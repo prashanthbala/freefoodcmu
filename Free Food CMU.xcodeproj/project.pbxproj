@@ -31,6 +31,7 @@
 		88D01747181E302E004F4A28 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D01746181E302E004F4A28 /* Security.framework */; };
 		88D01749181E3034004F4A28 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D01748181E3034004F4A28 /* StoreKit.framework */; };
 		88D0174B181E303B004F4A28 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D0174A181E303B004F4A28 /* SystemConfiguration.framework */; };
+		88D0174E181E3776004F4A28 /* FoodEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D0174D181E3776004F4A28 /* FoodEntry.m */; };
 		D1C35040181E33D600A9C7B8 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C3503F181E33D600A9C7B8 /* Parse.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,8 @@
 		88D01746181E302E004F4A28 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		88D01748181E3034004F4A28 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		88D0174A181E303B004F4A28 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		88D0174C181E3776004F4A28 /* FoodEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodEntry.h; sourceTree = "<group>"; };
+		88D0174D181E3776004F4A28 /* FoodEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodEntry.m; sourceTree = "<group>"; };
 		D1C3503F181E33D600A9C7B8 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,6 +165,8 @@
 				88585638181D9B7200B35F20 /* Images.xcassets */,
 				88585627181D9B7200B35F20 /* Supporting Files */,
 				3847BCFE181E34130083584E /* freefood.storyboard */,
+				88D0174C181E3776004F4A28 /* FoodEntry.h */,
+				88D0174D181E3776004F4A28 /* FoodEntry.m */,
 			);
 			path = "Free Food CMU";
 			sourceTree = "<group>";
@@ -293,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88D0174E181E3776004F4A28 /* FoodEntry.m in Sources */,
 				88585637181D9B7200B35F20 /* MPBViewController.m in Sources */,
 				88585631181D9B7200B35F20 /* MPBAppDelegate.m in Sources */,
 				8858562D181D9B7200B35F20 /* main.m in Sources */,
