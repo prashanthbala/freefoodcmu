@@ -25,8 +25,8 @@
     
 }
 
-- (NSArray *) getAllFoodEntries { return NULL;
-//    PFQuery *query = [PFQuery queryWithClassName:@"foodEntry"];
+- (NSArray *) getAllFoodEntries {
+    PFQuery *query = [PFQuery queryWithClassName:@"foodEntry"];
 //    [query findObjectsInBackgroundWithBlock:(NSArray *objects, NSError *error){
 //        if(!error){
 //            return objects;
@@ -37,6 +37,18 @@
 //        }
 //    
 //    }];
+    
+    
+    
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            NSLog(@"%s foodEntries found", objects.count);
+            return objects;
+        } else {
+            return NULL;
+        }
+        
+    }];
 }
 
 @end
