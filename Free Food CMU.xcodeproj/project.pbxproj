@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3847BCFD181E33A20083584E /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3847BCFC181E33A20083584E /* Parse.framework */; };
 		3847BD44181E40A50083584E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3847BD43181E40A50083584E /* MainStoryboard.storyboard */; };
+		387C1DAC181E5DA70048EFF6 /* appbackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 387C1DAB181E5DA70048EFF6 /* appbackground.jpg */; };
 		88585621181D9B7200B35F20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88585620181D9B7200B35F20 /* Foundation.framework */; };
 		88585623181D9B7200B35F20 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88585622181D9B7200B35F20 /* CoreGraphics.framework */; };
 		88585625181D9B7200B35F20 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88585624181D9B7200B35F20 /* UIKit.framework */; };
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		3847BCFC181E33A20083584E /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		3847BD43181E40A50083584E /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		387C1DAB181E5DA70048EFF6 /* appbackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = appbackground.jpg; sourceTree = "<group>"; };
 		8858561D181D9B7200B35F20 /* Free Food CMU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Free Food CMU.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88585620181D9B7200B35F20 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		88585622181D9B7200B35F20 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -76,10 +78,8 @@
 		88D01746181E302E004F4A28 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		88D01748181E3034004F4A28 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		88D0174A181E303B004F4A28 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		88D0174C181E3776004F4A28 /* FoodEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodEntry.h; sourceTree = "<group>"; };
 		88D0174D181E3776004F4A28 /* FoodEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodEntry.m; sourceTree = "<group>"; };
 		D1C3503F181E33D600A9C7B8 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		D1C35041181E41D900A9C7B8 /* MPBParseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPBParseService.h; sourceTree = "<group>"; };
 		D1C35042181E41D900A9C7B8 /* MPBParseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPBParseService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -161,6 +161,7 @@
 		88585626181D9B7200B35F20 /* Free Food CMU */ = {
 			isa = PBXGroup;
 			children = (
+				387C1DAB181E5DA70048EFF6 /* appbackground.jpg */,
 				3847BD43181E40A50083584E /* MainStoryboard.storyboard */,
 				8858562F181D9B7200B35F20 /* MPBAppDelegate.h */,
 				88585630181D9B7200B35F20 /* MPBAppDelegate.m */,
@@ -279,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3847BD44181E40A50083584E /* MainStoryboard.storyboard in Resources */,
+				387C1DAC181E5DA70048EFF6 /* appbackground.jpg in Resources */,
 				88585639181D9B7200B35F20 /* Images.xcassets in Resources */,
 				8858562B181D9B7200B35F20 /* InfoPlist.strings in Resources */,
 			);
@@ -431,6 +433,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Free Food CMU/Free Food CMU-Prefix.pch";
 				INFOPLIST_FILE = "Free Food CMU/Free Food CMU-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -451,6 +454,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Free Food CMU/Free Food CMU-Prefix.pch";
 				INFOPLIST_FILE = "Free Food CMU/Free Food CMU-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;

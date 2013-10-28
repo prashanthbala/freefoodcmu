@@ -10,7 +10,8 @@
 #import <Parse/Parse.h>
 
 @interface MPBViewController ()
-
+@property (nonatomic, strong) UILabel *titleLabel;
+@property (nonatomic, strong) UIView *darkOverlayView;
 @end
 
 @implementation MPBViewController
@@ -19,9 +20,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
-    [testObject setObject:@"bar" forKey:@"foo"];
-    [testObject save];
+
 }
 
 - (void)didReceiveMemoryWarning
