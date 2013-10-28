@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="sto-TZ-Phn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="sto-TZ-Phn">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Story Board View Controller-->
         <scene sceneID="ifw-RP-wD1">
             <objects>
-                <viewController id="sto-TZ-Phn" sceneMemberID="viewController">
+                <viewController id="sto-TZ-Phn" customClass="StoryBoardViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UN4-zw-phA"/>
                         <viewControllerLayoutGuide type="bottom" id="Wtb-va-WzD"/>
@@ -53,10 +53,10 @@
             </objects>
             <point key="canvasLocation" x="-265" y="42"/>
         </scene>
-        <!--Table View Controller - Available Food-->
+        <!--Food Table View Controller - Available Food-->
         <scene sceneID="50K-rH-bfg">
             <objects>
-                <tableViewController id="viO-mx-eSF" sceneMemberID="viewController">
+                <tableViewController id="viO-mx-eSF" customClass="FoodTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="PO4-oa-Vjj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -100,15 +100,19 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="FoodCellLocation" destination="pSi-Cw-P05" id="eXf-Jr-xof"/>
+                        <outlet property="FoodCellName" destination="IeO-jW-cE6" id="CEd-yi-SFe"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bhE-T4-FoO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="824" y="-661"/>
         </scene>
-        <!--View Controller - Entry-->
+        <!--Food Entry View Controller - Entry-->
         <scene sceneID="h48-Lp-SBI">
             <objects>
-                <viewController id="b7W-W4-o8S" sceneMemberID="viewController">
+                <viewController id="b7W-W4-o8S" customClass="FoodEntryViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mw5-BA-WNG"/>
                         <viewControllerLayoutGuide type="bottom" id="Q0c-Uc-96f"/>
@@ -141,15 +145,20 @@
                     <navigationItem key="navigationItem" title="Entry" id="hb5-ra-Qsi">
                         <barButtonItem key="leftBarButtonItem" title="Available Food" id="8Mj-F2-bks"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="foodEntryLabel" destination="2uG-K1-QRQ" id="q5p-vF-IuH"/>
+                        <outlet property="foodSummaryDescription" destination="B4y-rM-LLo" id="M00-aJ-LfS"/>
+                        <outlet property="foodSummarylocation" destination="rMc-Xj-3Wc" id="RWv-go-yhA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aG5-sT-8hv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1854" y="-658"/>
         </scene>
-        <!--View Controller - Food Form-->
+        <!--Food Form View Controller - Food Form-->
         <scene sceneID="QvL-8X-sRw">
             <objects>
-                <viewController id="Fj6-o3-zZz" sceneMemberID="viewController">
+                <viewController id="Fj6-o3-zZz" customClass="FoodFormViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wxi-qO-YUO"/>
                         <viewControllerLayoutGuide type="bottom" id="Vxi-z9-Jfq"/>
@@ -216,6 +225,11 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="descriptionEntry" destination="hgM-SM-K1c" id="SvM-u7-O8E"/>
+                        <outlet property="foodEntry" destination="OGY-AA-l52" id="mqK-hA-38e"/>
+                        <outlet property="locationEntry" destination="8FL-2w-fSe" id="tkv-Op-WGE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W1y-lz-3qA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
