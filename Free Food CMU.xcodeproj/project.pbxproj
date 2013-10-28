@@ -31,6 +31,7 @@
 		88D01747181E302E004F4A28 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D01746181E302E004F4A28 /* Security.framework */; };
 		88D01749181E3034004F4A28 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D01748181E3034004F4A28 /* StoreKit.framework */; };
 		88D0174B181E303B004F4A28 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D0174A181E303B004F4A28 /* SystemConfiguration.framework */; };
+		D1C35040181E33D600A9C7B8 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C3503F181E33D600A9C7B8 /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		88D01746181E302E004F4A28 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		88D01748181E3034004F4A28 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		88D0174A181E303B004F4A28 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D1C3503F181E33D600A9C7B8 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				88D01745181E3027004F4A28 /* QuartzCore.framework in Frameworks */,
 				88D01743181E3021004F4A28 /* MobileCoreServices.framework in Frameworks */,
 				88D01741181E301B004F4A28 /* libz.1.1.3.dylib in Frameworks */,
+				D1C35040181E33D600A9C7B8 /* Parse.framework in Frameworks */,
 				88D0173F181E3015004F4A28 /* CoreLocation.framework in Frameworks */,
 				88585623181D9B7200B35F20 /* CoreGraphics.framework in Frameworks */,
 				88D0173D181E3003004F4A28 /* CFNetwork.framework in Frameworks */,
@@ -116,7 +119,7 @@
 				88585645181D9B7200B35F20 /* Free Food CMUTests */,
 				8858561F181D9B7200B35F20 /* Frameworks */,
 				8858561E181D9B7200B35F20 /* Products */,
-				3847BCFC181E33A20083584E /* Parse.framework */,
+				D1C3503F181E33D600A9C7B8 /* Parse.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -415,6 +418,7 @@
 					"$(inherited)",
 					"/Users/Prashanth/Documents/workspace/iOS/Free\\ Food\\ CMU",
 					"/Users/Wale/Documents/Projects/IOS\\ Dev/freefoodcmu/freefoodcmu",
+					/Users/rishabhalaapsingh/freefoodcmu,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Free Food CMU/Free Food CMU-Prefix.pch";
@@ -433,6 +437,7 @@
 					"$(inherited)",
 					"/Users/Prashanth/Documents/workspace/iOS/Free\\ Food\\ CMU",
 					"/Users/Wale/Documents/Projects/IOS\\ Dev/freefoodcmu/freefoodcmu",
+					/Users/rishabhalaapsingh/freefoodcmu,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Free Food CMU/Free Food CMU-Prefix.pch";
