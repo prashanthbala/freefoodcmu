@@ -14,6 +14,6 @@
 @property (nonatomic, strong) NSString *location;
 @property (nonatomic, strong) NSString *description;
 
-- (instancetype) initWithFood:(NSString *) food location:(NSString *) description:(NSString *) description;
+- (instancetype)initWithFood:(NSString *)food location:(NSString *)location description:(NSString *)description;
 
 @end
