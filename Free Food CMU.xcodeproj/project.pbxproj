@@ -36,7 +36,8 @@
 		88D01747181E302E004F4A28 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D01746181E302E004F4A28 /* Security.framework */; };
 		88D01749181E3034004F4A28 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D01748181E3034004F4A28 /* StoreKit.framework */; };
 		88D0174B181E303B004F4A28 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D0174A181E303B004F4A28 /* SystemConfiguration.framework */; };
-		D165AA5C181F1FED00EC00F5 /* MPBParseService.m in Sources */ = {isa = PBXBuildFile; fileRef = D165AA5B181F1FED00EC00F5 /* MPBParseService.m */; };
+		D165AA5F181F25CF00EC00F5 /* MPBParseService.m in Sources */ = {isa = PBXBuildFile; fileRef = D165AA5E181F25CF00EC00F5 /* MPBParseService.m */; };
+		D165AA65181F285A00EC00F5 /* FoodEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = D165AA64181F285A00EC00F5 /* FoodEntry.m */; };
 		D1C35040181E33D600A9C7B8 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C3503F181E33D600A9C7B8 /* Parse.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,11 +86,11 @@
 		88D01746181E302E004F4A28 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		88D01748181E3034004F4A28 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		88D0174A181E303B004F4A28 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		D165AA5A181F1FED00EC00F5 /* MPBParseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPBParseService.h; sourceTree = "<group>"; };
-		D165AA5B181F1FED00EC00F5 /* MPBParseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPBParseService.m; sourceTree = "<group>"; };
+		D165AA5D181F25CF00EC00F5 /* MPBParseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPBParseService.h; sourceTree = "<group>"; };
+		D165AA5E181F25CF00EC00F5 /* MPBParseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPBParseService.m; sourceTree = "<group>"; };
+		D165AA63181F285A00EC00F5 /* FoodEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodEntry.h; sourceTree = "<group>"; };
+		D165AA64181F285A00EC00F5 /* FoodEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodEntry.m; sourceTree = "<group>"; };
 		D1C3503F181E33D600A9C7B8 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		D1FB214D181F0A4F00E5A3BC /* FoodEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodEntry.h; sourceTree = "<group>"; };
-		D1FB214E181F0A4F00E5A3BC /* FoodEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodEntry.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,12 +182,12 @@
 		88585626181D9B7200B35F20 /* Free Food CMU */ = {
 			isa = PBXGroup;
 			children = (
-				D165AA5A181F1FED00EC00F5 /* MPBParseService.h */,
-				D165AA5B181F1FED00EC00F5 /* MPBParseService.m */,
+				D165AA63181F285A00EC00F5 /* FoodEntry.h */,
+				D165AA64181F285A00EC00F5 /* FoodEntry.m */,
+				D165AA5D181F25CF00EC00F5 /* MPBParseService.h */,
+				D165AA5E181F25CF00EC00F5 /* MPBParseService.m */,
 				3847BD43181E40A50083584E /* MainStoryboard.storyboard */,
 				3816C761181F145200C49F2B /* Images */,
-				D1FB214D181F0A4F00E5A3BC /* FoodEntry.h */,
-				D1FB214E181F0A4F00E5A3BC /* FoodEntry.m */,
 				387C1DAB181E5DA70048EFF6 /* appbackground.jpg */,
 				8858562F181D9B7200B35F20 /* MPBAppDelegate.h */,
 				88585630181D9B7200B35F20 /* MPBAppDelegate.m */,
@@ -331,10 +332,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D165AA5F181F25CF00EC00F5 /* MPBParseService.m in Sources */,
 				88585637181D9B7200B35F20 /* MPBViewController.m in Sources */,
+				D165AA65181F285A00EC00F5 /* FoodEntry.m in Sources */,
 				88585631181D9B7200B35F20 /* MPBAppDelegate.m in Sources */,
 				8858562D181D9B7200B35F20 /* main.m in Sources */,
-				D165AA5C181F1FED00EC00F5 /* MPBParseService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

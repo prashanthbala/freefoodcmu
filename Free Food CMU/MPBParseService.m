@@ -18,30 +18,39 @@
     return self;
 }
 
--(void) sendFoodEntry:(FoodEntry *)foodentry {
+-(void) uploadFoodEntry:(FoodEntry *)foodentry {
+    NSLog(@"entered..");
     NSString *location = foodentry.location;
     NSString *food = foodentry.food;
     NSString *description = foodentry.description;
     
     PFObject *new_entry = [PFObject objectWithClassName:@"foodEntry"];
+    
+    NSLog(@"***");
+    NSLog(@"location : %s", location);
+    NSLog(@"food : %s", food);
+    NSLog(@"description : %s", description);
+    NSLog(@"***");
+    
     [new_entry setObject:location forKey:@"location"];
     [new_entry setObject:food forKey:@"food"];
     [new_entry setObject:description forKey:@"description"];
     
     [new_entry save];
+    NSLog(@"saved!");
     
 }
 
-- (void) getAllFoodEntries {
+- (void) allFoodEntries {
     PFQuery *query = [PFQuery queryWithClassName:@"foodEntry"];
 
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error){
           if (!error){
-            NSLog(@"number of objects = %d",[objects count]);
+              NSLog(@"count = %d", [objects count]);
             return;
         }
         else {
-            NSLog(@"ERRROR GETTING VALUES :( ");
+            NSLog(@"ERROR :(");
             return;
         }
     
