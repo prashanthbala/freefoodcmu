@@ -13,6 +13,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+//    Pushing for the sake of pushing
+    
     [Parse setApplicationId:@"7XoWL5jMebsXMe9Jaf9gpqsm0ooHdSt9YilHTEQb"
                   clientKey:@"lHba5oi6j781DYgXm2d3kyFXXgVvl3vFq4TtHwzh"];
     
