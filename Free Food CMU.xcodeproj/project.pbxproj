@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3816C759181F0EDA00C49F2B /* Food-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 3816C756181F0EDA00C49F2B /* Food-Button.png */; };
+		3816C75A181F0EDA00C49F2B /* Hungry-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 3816C757181F0EDA00C49F2B /* Hungry-Button.png */; };
+		3816C75B181F0EDA00C49F2B /* Submit-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 3816C758181F0EDA00C49F2B /* Submit-Button.png */; };
+		3816C75D181F123600C49F2B /* postfood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3816C75C181F123600C49F2B /* postfood.jpg */; };
+		3816C75F181F13B800C49F2B /* finish-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 3816C75E181F13B800C49F2B /* finish-button.png */; };
 		3847BCFD181E33A20083584E /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3847BCFC181E33A20083584E /* Parse.framework */; };
 		3847BD44181E40A50083584E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3847BD43181E40A50083584E /* MainStoryboard.storyboard */; };
 		387C1DAC181E5DA70048EFF6 /* appbackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 387C1DAB181E5DA70048EFF6 /* appbackground.jpg */; };
@@ -50,6 +55,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3816C756181F0EDA00C49F2B /* Food-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Food-Button.png"; sourceTree = "<group>"; };
+		3816C757181F0EDA00C49F2B /* Hungry-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hungry-Button.png"; sourceTree = "<group>"; };
+		3816C758181F0EDA00C49F2B /* Submit-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Submit-Button.png"; sourceTree = "<group>"; };
+		3816C75C181F123600C49F2B /* postfood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = postfood.jpg; sourceTree = "<group>"; };
+		3816C75E181F13B800C49F2B /* finish-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "finish-button.png"; sourceTree = "<group>"; };
 		3847BCFC181E33A20083584E /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		3847BD43181E40A50083584E /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		387C1DAB181E5DA70048EFF6 /* appbackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = appbackground.jpg; sourceTree = "<group>"; };
@@ -124,6 +134,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3816C761181F145200C49F2B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3816C75E181F13B800C49F2B /* finish-button.png */,
+				3816C75C181F123600C49F2B /* postfood.jpg */,
+				3816C756181F0EDA00C49F2B /* Food-Button.png */,
+				3816C757181F0EDA00C49F2B /* Hungry-Button.png */,
+				3816C758181F0EDA00C49F2B /* Submit-Button.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		88585614181D9B7100B35F20 = {
 			isa = PBXGroup;
 			children = (
@@ -167,12 +189,13 @@
 		88585626181D9B7200B35F20 /* Free Food CMU */ = {
 			isa = PBXGroup;
 			children = (
+				3847BD43181E40A50083584E /* MainStoryboard.storyboard */,
+				3816C761181F145200C49F2B /* Images */,
 				D1FB214D181F0A4F00E5A3BC /* FoodEntry.h */,
 				D1FB214E181F0A4F00E5A3BC /* FoodEntry.m */,
 				D1FB214F181F0A4F00E5A3BC /* MPBParseService.h */,
 				D1FB2150181F0A4F00E5A3BC /* MPBParseService.m */,
 				387C1DAB181E5DA70048EFF6 /* appbackground.jpg */,
-				3847BD43181E40A50083584E /* MainStoryboard.storyboard */,
 				8858562F181D9B7200B35F20 /* MPBAppDelegate.h */,
 				88585630181D9B7200B35F20 /* MPBAppDelegate.m */,
 				88585635181D9B7200B35F20 /* MPBViewController.h */,
@@ -290,9 +313,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3847BD44181E40A50083584E /* MainStoryboard.storyboard in Resources */,
+				3816C75D181F123600C49F2B /* postfood.jpg in Resources */,
 				387C1DAC181E5DA70048EFF6 /* appbackground.jpg in Resources */,
+				3816C75A181F0EDA00C49F2B /* Hungry-Button.png in Resources */,
+				3816C75B181F0EDA00C49F2B /* Submit-Button.png in Resources */,
 				88585639181D9B7200B35F20 /* Images.xcassets in Resources */,
+				3816C759181F0EDA00C49F2B /* Food-Button.png in Resources */,
 				8858562B181D9B7200B35F20 /* InfoPlist.strings in Resources */,
+				3816C75F181F13B800C49F2B /* finish-button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
