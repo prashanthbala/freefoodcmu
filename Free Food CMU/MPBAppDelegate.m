@@ -28,7 +28,9 @@
     
     NSLog(@"ptr = %p", parseServiceInstance);
     
-    NSLog(@"------");
+    parseServiceInstance.getAllFoodEntries;
+    
+    NSLog(@"-----------");
     
     
     // Override point for customization after application launch.

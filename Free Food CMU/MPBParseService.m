@@ -35,9 +35,9 @@
 - (void) getAllFoodEntries {
     PFQuery *query = [PFQuery queryWithClassName:@"foodEntry"];
 
-    [query findObjectsInBackgroundWithBlock:(NSArray *objects, NSError *error){
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error){
           if (!error){
-            NSLog(@"YESSSSSS");
+//            NSLog(@"%d",objects.s);
             return;
         }
         else {
@@ -46,8 +46,9 @@
         }
     
     }];
-    
-    
+}
+
+
 //    
 //    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
 //        if (!error) {
@@ -58,6 +59,5 @@
 //        }
 //        
 //    }];
-}
 
 @end
