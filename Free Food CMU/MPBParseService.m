@@ -27,28 +27,29 @@
 
 - (NSArray *) getAllFoodEntries {
     PFQuery *query = [PFQuery queryWithClassName:@"foodEntry"];
-//    [query findObjectsInBackgroundWithBlock:(NSArray *objects, NSError *error){
-//        if(!error){
-//            return objects;
-//        }
-//        else {
-//            NSLog(@"ERRROR GETTING VALUES :( ");
-//            return null;
-//        }
-//    
-//    }];
-    
-    
-    
-    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        if (!error) {
-            NSLog(@"%s foodEntries found", objects.count);
+//    return nil;
+    [query findObjectsInBackgroundWithBlock:(NSArray *objects, NSError *error){
+          if (!error){
             return objects;
-        } else {
-            return NULL;
         }
-        
+        else {
+            NSLog(@"ERRROR GETTING VALUES :( ");
+            return nil;
+        }
+    
     }];
+    
+    
+//    
+//    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+//        if (!error) {
+//            NSLog(@"%s foodEntries found", objects.count);
+//            return objects;
+//        } else {
+//            return NULL;
+//        }
+//        
+//    }];
 }
 
 @end
