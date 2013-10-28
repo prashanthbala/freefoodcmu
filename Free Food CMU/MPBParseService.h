@@ -13,7 +13,7 @@
 
 - (instancetype) init;
 - (void) uploadFoodEntry:(FoodEntry *)foodentry;
-- (void) allFoodEntries;
+- (id) allFoodEntries;
 
 
 @end

@@ -98,9 +98,7 @@
 		88D01746181E302E004F4A28 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		88D01748181E3034004F4A28 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		88D0174A181E303B004F4A28 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		D165AA5D181F25CF00EC00F5 /* MPBParseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPBParseService.h; sourceTree = "<group>"; };
 		D165AA5E181F25CF00EC00F5 /* MPBParseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPBParseService.m; sourceTree = "<group>"; };
-		D165AA63181F285A00EC00F5 /* FoodEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodEntry.h; sourceTree = "<group>"; };
 		D165AA64181F285A00EC00F5 /* FoodEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodEntry.m; sourceTree = "<group>"; };
 		D1C3503F181E33D600A9C7B8 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,6 +140,7 @@
 		3816C761181F145200C49F2B /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				387C1DAB181E5DA70048EFF6 /* appbackground.jpg */,
 				3816C75E181F13B800C49F2B /* finish-button.png */,
 				3816C75C181F123600C49F2B /* postfood.jpg */,
 				3816C756181F0EDA00C49F2B /* Food-Button.png */,
@@ -225,12 +224,9 @@
 				3816C770181F2C2B00C49F2B /* FoodEntry */,
 				3816C768181F2ACA00C49F2B /* FoodFormViewController */,
 				3816C76C181F2B2400C49F2B /* FoodTableView */,
-				D165AA5A181F1FED00EC00F5 /* MPBParseService.h */,
-				D165AA5B181F1FED00EC00F5 /* MPBParseService.m */,
 				3816C762181F287800C49F2B /* StoryBoardViewController.h */,
 				3816C763181F287800C49F2B /* StoryBoardViewController.m */,
 				3816C761181F145200C49F2B /* Images */,
-				387C1DAB181E5DA70048EFF6 /* appbackground.jpg */,
 				8858562F181D9B7200B35F20 /* MPBAppDelegate.h */,
 				88585630181D9B7200B35F20 /* MPBAppDelegate.m */,
 				88585635181D9B7200B35F20 /* MPBViewController.h */,
@@ -379,7 +375,6 @@
 				D165AA65181F285A00EC00F5 /* FoodEntry.m in Sources */,
 				88585631181D9B7200B35F20 /* MPBAppDelegate.m in Sources */,
 				8858562D181D9B7200B35F20 /* main.m in Sources */,
-				D165AA5C181F1FED00EC00F5 /* MPBParseService.m in Sources */,
 				3816C767181F29E700C49F2B /* FoodFormViewController.m in Sources */,
 				3816C76F181F2C2500C49F2B /* FoodEntryViewController.m in Sources */,
 				3816C76B181F2B1C00C49F2B /* FoodTableViewController.m in Sources */,
