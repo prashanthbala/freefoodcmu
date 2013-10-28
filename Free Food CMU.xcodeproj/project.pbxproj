@@ -12,7 +12,6 @@
 		3816C75B181F0EDA00C49F2B /* Submit-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 3816C758181F0EDA00C49F2B /* Submit-Button.png */; };
 		3816C75D181F123600C49F2B /* postfood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3816C75C181F123600C49F2B /* postfood.jpg */; };
 		3816C75F181F13B800C49F2B /* finish-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 3816C75E181F13B800C49F2B /* finish-button.png */; };
-		3847BCFD181E33A20083584E /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3847BCFC181E33A20083584E /* Parse.framework */; };
 		3847BD44181E40A50083584E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3847BD43181E40A50083584E /* MainStoryboard.storyboard */; };
 		387C1DAC181E5DA70048EFF6 /* appbackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 387C1DAB181E5DA70048EFF6 /* appbackground.jpg */; };
 		88585621181D9B7200B35F20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88585620181D9B7200B35F20 /* Foundation.framework */; };
@@ -37,11 +36,7 @@
 		88D01747181E302E004F4A28 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D01746181E302E004F4A28 /* Security.framework */; };
 		88D01749181E3034004F4A28 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D01748181E3034004F4A28 /* StoreKit.framework */; };
 		88D0174B181E303B004F4A28 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D0174A181E303B004F4A28 /* SystemConfiguration.framework */; };
-		88D0174E181E3776004F4A28 /* FoodEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D0174D181E3776004F4A28 /* FoodEntry.m */; };
 		D1C35040181E33D600A9C7B8 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C3503F181E33D600A9C7B8 /* Parse.framework */; };
-		D1C35043181E41D900A9C7B8 /* MPBParseService.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C35042181E41D900A9C7B8 /* MPBParseService.m */; };
-		D1FB2151181F0A4F00E5A3BC /* FoodEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FB214E181F0A4F00E5A3BC /* FoodEntry.m */; };
-		D1FB2152181F0A4F00E5A3BC /* MPBParseService.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FB2150181F0A4F00E5A3BC /* MPBParseService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +55,6 @@
 		3816C758181F0EDA00C49F2B /* Submit-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Submit-Button.png"; sourceTree = "<group>"; };
 		3816C75C181F123600C49F2B /* postfood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = postfood.jpg; sourceTree = "<group>"; };
 		3816C75E181F13B800C49F2B /* finish-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "finish-button.png"; sourceTree = "<group>"; };
-		3847BCFC181E33A20083584E /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		3847BD43181E40A50083584E /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		387C1DAB181E5DA70048EFF6 /* appbackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = appbackground.jpg; sourceTree = "<group>"; };
 		8858561D181D9B7200B35F20 /* Free Food CMU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Free Food CMU.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,7 +109,6 @@
 				88585623181D9B7200B35F20 /* CoreGraphics.framework in Frameworks */,
 				88D0173D181E3003004F4A28 /* CFNetwork.framework in Frameworks */,
 				88D0173B181E2FE6004F4A28 /* AudioToolbox.framework in Frameworks */,
-				3847BCFD181E33A20083584E /* Parse.framework in Frameworks */,
 				88585625181D9B7200B35F20 /* UIKit.framework in Frameworks */,
 				88585621181D9B7200B35F20 /* Foundation.framework in Frameworks */,
 			);
