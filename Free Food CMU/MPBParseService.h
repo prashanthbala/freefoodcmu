@@ -12,8 +12,8 @@
 @interface MPBParseService : NSObject
 
 - (instancetype) init;
-- (void) sendFoodEntry:(FoodEntry *)foodentry;
-- (void) getAllFoodEntries;
+- (void) uploadFoodEntry:(FoodEntry *)foodentry;
+- (void) allFoodEntries;
 
 
 @end

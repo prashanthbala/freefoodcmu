@@ -21,6 +21,14 @@
                   clientKey:@"lHba5oi6j781DYgXm2d3kyFXXgVvl3vFq4TtHwzh"];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
+    PFObject *new_entry = [PFObject objectWithClassName:@"foodEntry"];
+    [new_entry setObject:@"TESTLOCATION" forKey:@"location"];
+    [new_entry setObject:@"TESTFOOD" forKey:@"food"];
+    [new_entry setObject:@"TESTDESCRIPTION" forKey:@"description"];
+    
+    [new_entry save];
+    
+    
     
     NSLog(@"---INIT!---");
     
@@ -28,7 +36,22 @@
     
     NSLog(@"ptr = %p", parseServiceInstance);
     
-    parseServiceInstance.getAllFoodEntries;
+    NSLog(@"-old entry-");
+    parseServiceInstance.allFoodEntries;
+    NSLog(@"----");
+    
+//    save an entry
+    FoodEntry *newFE = [[FoodEntry alloc] initWithFood:@"pizza" location:@"gates 6" description:@"made by Rishabh test"];
+    
+//    CHECK THIS
+    parseServiceInstance.uploadFoodEntries(newFE);
+    
+    NSLog(@"-new entry-");
+    parseServiceInstance.allFoodEntries;
+    NSLog(@"----");
+    
+    
+    
     
     NSLog(@"-----------");
     
