@@ -37,7 +37,7 @@
 
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error){
           if (!error){
-//            NSLog(@"%d",objects.s);
+            NSLog(@"number of objects = %d",[objects count]);
             return;
         }
         else {

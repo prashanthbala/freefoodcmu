@@ -28,7 +28,17 @@
     
     NSLog(@"ptr = %p", parseServiceInstance);
     
+    NSLog(@"-old entry-");
     parseServiceInstance.getAllFoodEntries;
+    NSLog(@"----");
+    
+//    save an entry
+    FoodEntry *newFE = [[FoodEntry alloc] initWithFood:@"pizza" location:@"gates 6" description:@"made by Rishabh test"];
+    
+    parseServiceInstance.
+    
+    
+    
     
     NSLog(@"-----------");
     
