@@ -33,6 +33,7 @@
 		88D0174B181E303B004F4A28 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D0174A181E303B004F4A28 /* SystemConfiguration.framework */; };
 		88D0174E181E3776004F4A28 /* FoodEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D0174D181E3776004F4A28 /* FoodEntry.m */; };
 		D1C35040181E33D600A9C7B8 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C3503F181E33D600A9C7B8 /* Parse.framework */; };
+		D1C35043181E41D900A9C7B8 /* MPBParseService.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C35042181E41D900A9C7B8 /* MPBParseService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,8 @@
 		88D0174C181E3776004F4A28 /* FoodEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodEntry.h; sourceTree = "<group>"; };
 		88D0174D181E3776004F4A28 /* FoodEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodEntry.m; sourceTree = "<group>"; };
 		D1C3503F181E33D600A9C7B8 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		D1C35041181E41D900A9C7B8 /* MPBParseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPBParseService.h; sourceTree = "<group>"; };
+		D1C35042181E41D900A9C7B8 /* MPBParseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPBParseService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +170,8 @@
 				3847BCFE181E34130083584E /* freefood.storyboard */,
 				88D0174C181E3776004F4A28 /* FoodEntry.h */,
 				88D0174D181E3776004F4A28 /* FoodEntry.m */,
+				D1C35041181E41D900A9C7B8 /* MPBParseService.h */,
+				D1C35042181E41D900A9C7B8 /* MPBParseService.m */,
 			);
 			path = "Free Food CMU";
 			sourceTree = "<group>";
@@ -298,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1C35043181E41D900A9C7B8 /* MPBParseService.m in Sources */,
 				88D0174E181E3776004F4A28 /* FoodEntry.m in Sources */,
 				88585637181D9B7200B35F20 /* MPBViewController.m in Sources */,
 				88585631181D9B7200B35F20 /* MPBAppDelegate.m in Sources */,
