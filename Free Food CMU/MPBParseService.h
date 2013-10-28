@@ -11,7 +11,8 @@
 
 @interface MPBParseService : NSObject
 
-- (void) sendFoodEntry:(FoodEntry *)foodentry toParse
+- (void) sendFoodEntry:(FoodEntry *)foodentry;
+- (NSArray *) getAllFoodEntries;
 
 
 @end

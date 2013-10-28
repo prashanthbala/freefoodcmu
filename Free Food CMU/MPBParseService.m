@@ -7,7 +7,36 @@
 //
 
 #import "MPBParseService.h"
+#import <Parse/Parse.h>
 
 @implementation MPBParseService
+
+-(void) sendFoodEntry:(FoodEntry *)foodentry {
+    NSString *location = foodentry.location;
+    NSString *food = foodentry.food;
+    NSString *description = foodentry.description;
+    
+    PFObject *new_entry = [PFObject objectWithClassName:@"foodEntry"];
+    [new_entry setObject:location forKey:@"location"];
+    [new_entry setObject:food forKey:@"food"];
+    [new_entry setObject:description forKey:@"description"];
+    
+    [new_entry save];
+    
+}
+
+- (NSArray *) getAllFoodEntries { return NULL;
+//    PFQuery *query = [PFQuery queryWithClassName:@"foodEntry"];
+//    [query findObjectsInBackgroundWithBlock:(NSArray *objects, NSError *error){
+//        if(!error){
+//            return objects;
+//        }
+//        else {
+//            NSLog(@"ERRROR GETTING VALUES :( ");
+//            return null;
+//        }
+//    
+//    }];
+}
 
 @end
