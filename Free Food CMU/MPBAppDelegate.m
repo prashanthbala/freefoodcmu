@@ -8,6 +8,7 @@
 
 #import "MPBAppDelegate.h"
 #import <Parse/Parse.h>
+#import "MPBParseService.h"
 
 @implementation MPBAppDelegate
 
@@ -18,8 +19,18 @@
     
     [Parse setApplicationId:@"7XoWL5jMebsXMe9Jaf9gpqsm0ooHdSt9YilHTEQb"
                   clientKey:@"lHba5oi6j781DYgXm2d3kyFXXgVvl3vFq4TtHwzh"];
-    
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    
+    NSLog(@"---INIT!---");
+    
+    MPBParseService *parseServiceInstance = [[MPBParseService alloc] init];
+    
+    NSLog(@"ptr = %p", parseServiceInstance);
+    
+    NSLog(@"------");
+    
+    
     // Override point for customization after application launch.
     return YES;
 }

@@ -11,6 +11,13 @@
 
 @implementation MPBParseService
 
+- (instancetype) init {
+    if (self = [super init]) {
+    }
+    
+    return self;
+}
+
 -(void) sendFoodEntry:(FoodEntry *)foodentry {
     NSString *location = foodentry.location;
     NSString *food = foodentry.food;
@@ -25,30 +32,32 @@
     
 }
 
-- (NSArray *) getAllFoodEntries {
+- (void) getAllFoodEntries {
     PFQuery *query = [PFQuery queryWithClassName:@"foodEntry"];
-//    [query findObjectsInBackgroundWithBlock:(NSArray *objects, NSError *error){
-//        if(!error){
-//            return objects;
-//        }
-//        else {
-//            NSLog(@"ERRROR GETTING VALUES :( ");
-//            return null;
-//        }
-//    
-//    }];
-    
-    
-    
-    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        if (!error) {
-            NSLog(@"%s foodEntries found", objects.count);
-            return objects;
-        } else {
-            return NULL;
+
+    [query findObjectsInBackgroundWithBlock:(NSArray *objects, NSError *error){
+          if (!error){
+            NSLog(@"YESSSSSS");
+            return;
         }
-        
+        else {
+            NSLog(@"ERRROR GETTING VALUES :( ");
+            return;
+        }
+    
     }];
+    
+    
+//    
+//    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+//        if (!error) {
+//            NSLog(@"%s foodEntries found", objects.count);
+//            return objects;
+//        } else {
+//            return NULL;
+//        }
+//        
+//    }];
 }
 
 @end
