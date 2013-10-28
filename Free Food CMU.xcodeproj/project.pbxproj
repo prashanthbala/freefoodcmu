@@ -12,6 +12,10 @@
 		3816C75B181F0EDA00C49F2B /* Submit-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 3816C758181F0EDA00C49F2B /* Submit-Button.png */; };
 		3816C75D181F123600C49F2B /* postfood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3816C75C181F123600C49F2B /* postfood.jpg */; };
 		3816C75F181F13B800C49F2B /* finish-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 3816C75E181F13B800C49F2B /* finish-button.png */; };
+		3816C764181F287800C49F2B /* StoryBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3816C763181F287800C49F2B /* StoryBoardViewController.m */; };
+		3816C767181F29E700C49F2B /* FoodFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3816C766181F29E700C49F2B /* FoodFormViewController.m */; };
+		3816C76B181F2B1C00C49F2B /* FoodTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3816C76A181F2B1C00C49F2B /* FoodTableViewController.m */; };
+		3816C76F181F2C2500C49F2B /* FoodEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3816C76E181F2C2500C49F2B /* FoodEntryViewController.m */; };
 		3847BD44181E40A50083584E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3847BD43181E40A50083584E /* MainStoryboard.storyboard */; };
 		387C1DAC181E5DA70048EFF6 /* appbackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 387C1DAB181E5DA70048EFF6 /* appbackground.jpg */; };
 		88585621181D9B7200B35F20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88585620181D9B7200B35F20 /* Foundation.framework */; };
@@ -57,6 +61,14 @@
 		3816C758181F0EDA00C49F2B /* Submit-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Submit-Button.png"; sourceTree = "<group>"; };
 		3816C75C181F123600C49F2B /* postfood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = postfood.jpg; sourceTree = "<group>"; };
 		3816C75E181F13B800C49F2B /* finish-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "finish-button.png"; sourceTree = "<group>"; };
+		3816C762181F287800C49F2B /* StoryBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryBoardViewController.h; sourceTree = "<group>"; };
+		3816C763181F287800C49F2B /* StoryBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryBoardViewController.m; sourceTree = "<group>"; };
+		3816C765181F29E700C49F2B /* FoodFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodFormViewController.h; sourceTree = "<group>"; };
+		3816C766181F29E700C49F2B /* FoodFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodFormViewController.m; sourceTree = "<group>"; };
+		3816C769181F2B1C00C49F2B /* FoodTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodTableViewController.h; sourceTree = "<group>"; };
+		3816C76A181F2B1C00C49F2B /* FoodTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodTableViewController.m; sourceTree = "<group>"; };
+		3816C76D181F2C2500C49F2B /* FoodEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodEntryViewController.h; sourceTree = "<group>"; };
+		3816C76E181F2C2500C49F2B /* FoodEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodEntryViewController.m; sourceTree = "<group>"; };
 		3847BD43181E40A50083584E /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		387C1DAB181E5DA70048EFF6 /* appbackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = appbackground.jpg; sourceTree = "<group>"; };
 		8858561D181D9B7200B35F20 /* Free Food CMU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Free Food CMU.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +151,33 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		3816C768181F2ACA00C49F2B /* FoodFormViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3816C765181F29E700C49F2B /* FoodFormViewController.h */,
+				3816C766181F29E700C49F2B /* FoodFormViewController.m */,
+			);
+			name = FoodFormViewController;
+			sourceTree = "<group>";
+		};
+		3816C76C181F2B2400C49F2B /* FoodTableView */ = {
+			isa = PBXGroup;
+			children = (
+				3816C769181F2B1C00C49F2B /* FoodTableViewController.h */,
+				3816C76A181F2B1C00C49F2B /* FoodTableViewController.m */,
+			);
+			name = FoodTableView;
+			sourceTree = "<group>";
+		};
+		3816C770181F2C2B00C49F2B /* FoodEntry */ = {
+			isa = PBXGroup;
+			children = (
+				3816C76D181F2C2500C49F2B /* FoodEntryViewController.h */,
+				3816C76E181F2C2500C49F2B /* FoodEntryViewController.m */,
+			);
+			name = FoodEntry;
+			sourceTree = "<group>";
+		};
 		88585614181D9B7100B35F20 = {
 			isa = PBXGroup;
 			children = (
@@ -182,11 +221,14 @@
 		88585626181D9B7200B35F20 /* Free Food CMU */ = {
 			isa = PBXGroup;
 			children = (
-				D165AA63181F285A00EC00F5 /* FoodEntry.h */,
-				D165AA64181F285A00EC00F5 /* FoodEntry.m */,
-				D165AA5D181F25CF00EC00F5 /* MPBParseService.h */,
-				D165AA5E181F25CF00EC00F5 /* MPBParseService.m */,
 				3847BD43181E40A50083584E /* MainStoryboard.storyboard */,
+				3816C770181F2C2B00C49F2B /* FoodEntry */,
+				3816C768181F2ACA00C49F2B /* FoodFormViewController */,
+				3816C76C181F2B2400C49F2B /* FoodTableView */,
+				D165AA5A181F1FED00EC00F5 /* MPBParseService.h */,
+				D165AA5B181F1FED00EC00F5 /* MPBParseService.m */,
+				3816C762181F287800C49F2B /* StoryBoardViewController.h */,
+				3816C763181F287800C49F2B /* StoryBoardViewController.m */,
 				3816C761181F145200C49F2B /* Images */,
 				387C1DAB181E5DA70048EFF6 /* appbackground.jpg */,
 				8858562F181D9B7200B35F20 /* MPBAppDelegate.h */,
@@ -337,6 +379,11 @@
 				D165AA65181F285A00EC00F5 /* FoodEntry.m in Sources */,
 				88585631181D9B7200B35F20 /* MPBAppDelegate.m in Sources */,
 				8858562D181D9B7200B35F20 /* main.m in Sources */,
+				D165AA5C181F1FED00EC00F5 /* MPBParseService.m in Sources */,
+				3816C767181F29E700C49F2B /* FoodFormViewController.m in Sources */,
+				3816C76F181F2C2500C49F2B /* FoodEntryViewController.m in Sources */,
+				3816C76B181F2B1C00C49F2B /* FoodTableViewController.m in Sources */,
+				3816C764181F287800C49F2B /* StoryBoardViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
