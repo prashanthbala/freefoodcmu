@@ -10,4 +10,14 @@
 
 @implementation FoodEntry
 
+- (instancetype)initWithFood:(NSString *)food location:(NSString *)location description:(NSString *)description
+{
+    if (self = [super init]) {
+        [self setFood:food];
+        [self setLocation:location];
+        [self setDescription:description];
+    }
+    return self;
+}
+
 @end
