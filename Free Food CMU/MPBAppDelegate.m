@@ -42,7 +42,7 @@
     NSLog(@"----");
     
 //    save an entry
- //   FoodEntry *newFE = [[FoodEntry alloc] initWithFood:@"pizza" location:@"gates 6" description:@"made by Rishabh test"];
+    FoodEntry *newFE = [[FoodEntry alloc] initWithFood:@"pizza" location:@"gates 6" description:@"made by Rishabh test"];
     
 //    CHECK THIS
     [parseServiceInstance uploadFoodEntry:newFE];
