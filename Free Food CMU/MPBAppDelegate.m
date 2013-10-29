@@ -9,6 +9,9 @@
 #import "MPBAppDelegate.h"
 #import <Parse/Parse.h>
 #import "MPBParseService.h"
+#import "FoodEntryViewController.h"
+#import "FoodFormViewController.h"
+#import "FoodTableViewController.h"
 
 @implementation MPBAppDelegate
 
@@ -37,17 +40,17 @@
     NSLog(@"ptr = %p", parseServiceInstance);
     
     NSLog(@"-old entry-");
-    parseServiceInstance.allFoodEntries;
+  //  parseServiceInstance.allFoodEntries;
     NSLog(@"----");
     
 //    save an entry
-    FoodEntry *newFE = [[FoodEntry alloc] initWithFood:@"pizza" location:@"gates 6" description:@"made by Rishabh test"];
+ //   FoodEntry *newFE = [[FoodEntry alloc] initWithFood:@"pizza" location:@"gates 6" description:@"made by Rishabh test"];
     
 //    CHECK THIS
-    parseServiceInstance.uploadFoodEntries(newFE);
+   // parseServiceInstance.uploadFoodEntries(newFE);
     
     NSLog(@"-new entry-");
-    parseServiceInstance.allFoodEntries;
+  //  parseServiceInstance.allFoodEntries;
     NSLog(@"----");
     
     

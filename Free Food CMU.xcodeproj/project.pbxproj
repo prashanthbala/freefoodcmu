@@ -16,6 +16,9 @@
 		3816C767181F29E700C49F2B /* FoodFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3816C766181F29E700C49F2B /* FoodFormViewController.m */; };
 		3816C76B181F2B1C00C49F2B /* FoodTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3816C76A181F2B1C00C49F2B /* FoodTableViewController.m */; };
 		3816C76F181F2C2500C49F2B /* FoodEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3816C76E181F2C2500C49F2B /* FoodEntryViewController.m */; };
+		3816C772181F331300C49F2B /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3816C771181F331300C49F2B /* logo.png */; };
+		3816C774181F345900C49F2B /* appicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3816C773181F345900C49F2B /* appicon.png */; };
+		3816C777181F35AB00C49F2B /* MPBParseService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3816C776181F35AB00C49F2B /* MPBParseService.m */; };
 		3847BD44181E40A50083584E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3847BD43181E40A50083584E /* MainStoryboard.storyboard */; };
 		387C1DAC181E5DA70048EFF6 /* appbackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 387C1DAB181E5DA70048EFF6 /* appbackground.jpg */; };
 		88585621181D9B7200B35F20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88585620181D9B7200B35F20 /* Foundation.framework */; };
@@ -69,6 +72,10 @@
 		3816C76A181F2B1C00C49F2B /* FoodTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodTableViewController.m; sourceTree = "<group>"; };
 		3816C76D181F2C2500C49F2B /* FoodEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodEntryViewController.h; sourceTree = "<group>"; };
 		3816C76E181F2C2500C49F2B /* FoodEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodEntryViewController.m; sourceTree = "<group>"; };
+		3816C771181F331300C49F2B /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		3816C773181F345900C49F2B /* appicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon.png; sourceTree = "<group>"; };
+		3816C775181F35AB00C49F2B /* MPBParseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPBParseService.h; sourceTree = "<group>"; };
+		3816C776181F35AB00C49F2B /* MPBParseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPBParseService.m; sourceTree = "<group>"; };
 		3847BD43181E40A50083584E /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		387C1DAB181E5DA70048EFF6 /* appbackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = appbackground.jpg; sourceTree = "<group>"; };
 		8858561D181D9B7200B35F20 /* Free Food CMU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Free Food CMU.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,7 +148,9 @@
 			isa = PBXGroup;
 			children = (
 				387C1DAB181E5DA70048EFF6 /* appbackground.jpg */,
+				3816C771181F331300C49F2B /* logo.png */,
 				3816C75E181F13B800C49F2B /* finish-button.png */,
+				3816C773181F345900C49F2B /* appicon.png */,
 				3816C75C181F123600C49F2B /* postfood.jpg */,
 				3816C756181F0EDA00C49F2B /* Food-Button.png */,
 				3816C757181F0EDA00C49F2B /* Hungry-Button.png */,
@@ -227,6 +236,9 @@
 				3816C762181F287800C49F2B /* StoryBoardViewController.h */,
 				3816C763181F287800C49F2B /* StoryBoardViewController.m */,
 				3816C761181F145200C49F2B /* Images */,
+				387C1DAB181E5DA70048EFF6 /* appbackground.jpg */,
+				3816C775181F35AB00C49F2B /* MPBParseService.h */,
+				3816C776181F35AB00C49F2B /* MPBParseService.m */,
 				8858562F181D9B7200B35F20 /* MPBAppDelegate.h */,
 				88585630181D9B7200B35F20 /* MPBAppDelegate.m */,
 				88585635181D9B7200B35F20 /* MPBViewController.h */,
@@ -349,6 +361,8 @@
 				3816C75A181F0EDA00C49F2B /* Hungry-Button.png in Resources */,
 				3816C75B181F0EDA00C49F2B /* Submit-Button.png in Resources */,
 				88585639181D9B7200B35F20 /* Images.xcassets in Resources */,
+				3816C774181F345900C49F2B /* appicon.png in Resources */,
+				3816C772181F331300C49F2B /* logo.png in Resources */,
 				3816C759181F0EDA00C49F2B /* Food-Button.png in Resources */,
 				8858562B181D9B7200B35F20 /* InfoPlist.strings in Resources */,
 				3816C75F181F13B800C49F2B /* finish-button.png in Resources */,
@@ -375,6 +389,7 @@
 				D165AA65181F285A00EC00F5 /* FoodEntry.m in Sources */,
 				88585631181D9B7200B35F20 /* MPBAppDelegate.m in Sources */,
 				8858562D181D9B7200B35F20 /* main.m in Sources */,
+				3816C777181F35AB00C49F2B /* MPBParseService.m in Sources */,
 				3816C767181F29E700C49F2B /* FoodFormViewController.m in Sources */,
 				3816C76F181F2C2500C49F2B /* FoodEntryViewController.m in Sources */,
 				3816C76B181F2B1C00C49F2B /* FoodTableViewController.m in Sources */,

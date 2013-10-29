@@ -21,7 +21,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4zR-Xh-DqD">
-                                <rect key="frame" x="-31" y="391" width="382" height="79"/>
+                                <rect key="frame" x="-31" y="359" width="382" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="20"/>
                                 <state key="normal" image="Hungry-Button.png">
@@ -33,7 +33,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edD-d9-XdJ">
-                                <rect key="frame" x="50" y="461" width="220" height="75"/>
+                                <rect key="frame" x="50" y="429" width="220" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="20"/>
                                 <state key="normal" image="Food-Button.png">
@@ -44,6 +44,10 @@
                                     <segue destination="E9n-ex-dLw" kind="modal" id="Ann-ZE-QDx"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="iLh-fk-E7Y">
+                                <rect key="frame" x="29" y="120" width="263" height="135"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -348,6 +352,7 @@
         <image name="Submit-Button.png" width="221" height="71"/>
         <image name="appbackground.jpg" width="640" height="1136"/>
         <image name="finish-button.png" width="220" height="72"/>
+        <image name="logo.png" width="676" height="315"/>
         <image name="postfood.jpg" width="600" height="400"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
