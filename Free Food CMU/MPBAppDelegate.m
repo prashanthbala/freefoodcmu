@@ -37,20 +37,18 @@
     
     MPBParseService *parseServiceInstance = [[MPBParseService alloc] init];
     
-    NSLog(@"ptr = %p", parseServiceInstance);
-    
     NSLog(@"-old entry-");
-  //  parseServiceInstance.allFoodEntries;
+    [parseServiceInstance allFoodEntries];
     NSLog(@"----");
     
 //    save an entry
  //   FoodEntry *newFE = [[FoodEntry alloc] initWithFood:@"pizza" location:@"gates 6" description:@"made by Rishabh test"];
     
 //    CHECK THIS
-   // parseServiceInstance.uploadFoodEntries(newFE);
+    [parseServiceInstance uploadFoodEntry:newFE];
     
     NSLog(@"-new entry-");
-  //  parseServiceInstance.allFoodEntries;
+    [parseServiceInstance allFoodEntries];
     NSLog(@"----");
     
     

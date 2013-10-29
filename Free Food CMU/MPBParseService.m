@@ -14,11 +14,10 @@
 - (instancetype) init {
     if (self = [super init]) {
     }
-    
     return self;
 }
 
--(void) uploadFoodEntry:(FoodEntry *)foodentry {
+- (void) uploadFoodEntry:(FoodEntry *)foodentry; {
     NSLog(@"entered..");
     NSString *location = foodentry.location;
     NSString *food = foodentry.food;
@@ -27,9 +26,9 @@
     PFObject *new_entry = [PFObject objectWithClassName:@"foodEntry"];
     
     NSLog(@"***");
-    NSLog(@"location : %s", location);
-    NSLog(@"food : %s", food);
-    NSLog(@"description : %s", description);
+    NSLog(@"location : %@", foodentry.location);
+    NSLog(@"food : %@", foodentry.food);
+    NSLog(@"description : %@", foodentry.description);
     NSLog(@"***");
     
     [new_entry setObject:location forKey:@"location"];
@@ -41,20 +40,21 @@
     
 }
 
-- (void) allFoodEntries {
+- (NSArray *) allFoodEntries {
     PFQuery *query = [PFQuery queryWithClassName:@"foodEntry"];
-
-    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error){
-          if (!error){
-              NSLog(@"count = %d", [objects count]);
-            return;
-        }
-        else {
-            NSLog(@"ERROR :(");
-            return;
-        }
-    
-    }];
+    return [query findObjects];
+//
+//    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error){
+//          if (!error){
+//              NSLog(@"count = %d", [objects count]);
+//            return;
+//        }
+//        else {
+//            NSLog(@"ERROR :(");
+//            return;
+//        }
+//    
+//    }];
 }
 
 

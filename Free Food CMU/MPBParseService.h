@@ -13,7 +13,7 @@
 
 - (instancetype) init;
 - (void) uploadFoodEntry:(FoodEntry *)foodentry;
-- (id) allFoodEntries;
+- (NSArray *) allFoodEntries;
 
 
 @end
